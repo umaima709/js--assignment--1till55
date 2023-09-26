@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <p> <h2>Chapter 41, 42 (while loops, do…while loops)
+(All Questions must be done with both loops)</h2>
+<h4>1.	Write a Code that runs twice and does nothing. The counter i has already been declared and assigned 0.</h4>
+<h3>Answer:</h3> var i = 0;<br>
+while (i < 2) {<br>
+  i++;
+  alert(i)
+}
+do{
+    i++;
+}<br>
+while(i<=2)<br>
+alert(i);
+<h4>2.	Code that looks for "pig" in the array. When it finds it, an alert displays saying, "Found it!" Use the length of the array as the loop limiter. Break out of the loop when it's found.<br>
+var animals=["horse", "ox", "cow", "pig", "duck"];</h4>
+<h3>Answer:</h3> 
+var animals=["horse", "ox", "cow", "pig", "duck"];<br>
+var i = 0;<br>
+while (i < animals.length) {
+  if (animals[i] === "pig") {
+    alert("Found it!");
+    break;
+  }<br>
+  i++;}
+<h4>3.	Code to use a while & do while loop to print the numbers from 1 to 10.</h4>
+<h3>Answer:</h3>
+var i=1;<br>
+while(i<=10){<br>
+    console.log(i)
+    i++;
+} do { i++ 
+}<br>
+while(i<=10)<br>
+console.log(i);
+<h4>4.To use a while loop to ask the user for a number and then print that number back to them.</h4>
+<h3>Answer:</h3>
+ var input=prompt("Enter Number")<br>
+var i=1;<br>
+while(i<=input){<br>
+    console.log(i)
+    i++}
+<h4>4.	To use a while loop to check if a number is even or odd.</h4>
+<h3>Answer:</h3> var i=0;<br>
+var num=prompt("Enter num to check odd or even");<br>
+while(num%2 ===0){<br>
+    alert("Even")
+    break;
+}
+<h4>5.	Create a guessing game where the user has to guess a number between 1 and 100. </h4>
+<h3>Answer:</h3>
+<h4>6.	 Use a while & do-while loop to create a countdown timer?</h4>
+<h3>Answer:</h3>
+<h2>Chapter 46, 48 (Events)</h2>
+<h4>1.Create a simple event that prints a message when the user clicks on an element.</h4>
+<h3>Answer:</h3> function myFunction() {<br>
+    document.getElementById("demo").innerHTML = "YOU CLICKED ME!";}
+<h4>2.Create an event that hides an element when the user clicks on a different element</h4>
+<h3>Answer:</h3>$(document).ready(function(){<br>
+    $(".btn1").click(function(){
+      $("p").hide();
+    });<br>
+    $(".btn2").click(function(){
+      $("p").show();
+    });<br>
+  });
+<h4>3.Create a link that changes color when the user hovers over it and then back to its original color when the user moves the mouse away.</h4>
+<h3>Answer:</h3>
+ onMouseover="this.style.color='green';"
+
+<h4>4.Create an event that scrolls to the top of the page when the user clicks on a link.</h4>
+<h3>Answer:</h3>
+button onclick="topFunction()" id="myBtn" title="Go to top">Top button><br>
+function topFunction() {<br>
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+<h4>5.Create a link that plays a sound when the user clicks on it.</h4>
+<h3>Answer:</h3>
+HTML5 audio element and JavaScript play() method.
+<h4>6.	Create a simple link that opens a new window when clicked.</h4>
+<h3>Answer:</h3>
+a href="#" target="_blank">link /a>
+    <h4>7.	Create a simple button that alert a message when clicked.</h4>
+    <h3>Answer:</h3>
+    button onclick="messag()">Hello /button<br>
+    in javascript:<br>
+    function messag (){<br>
+      alert("Hello")
+  }
+    <h4>8.	Create a button that changes color when the user hovers over it.</h4>
+    <h3>Answer:</h3>
+    a href="index.html" onMouseover="this.style.color='green';">Home Page</a>
+    <h4>9.	Create a button that plays a sound when the user clicks on it.
+        <h3>Answer:</h3>HTML5 audio element and JavaScript play() method
+    <h4>10.	Create an event that alert a message when the user moves the mouse over an element.</h4>
+    <h3>Answer:</h3>
+    Through onMouseover() event in javascript.
+    <h4>11.	Create an event that hides an element when the user moves the mouse out of it.</h4>
+    <h3>Answer:</h3>
+    Through onMouseout() event in javascript.
+
+    <h4>12.	 Create a link that opens a new window when the user clicks on it and then closes the window when the user clicks on a close button in the new window. The size of the new window should be determined by the user's mouse position.
+    </h4>
+    <h3>Answer:</h3>
+    button onclick="myFunction()">Try it button><br>
+    function myFunction() {<br>
+      var myWindow = window.open();
+      myWindow.document.write( );
+    }
+    <h2>Chapter 49, 50 (Reading and Setting field values)</h2>
+<h4>1.	 Read the value of a user Input and print it to the console.</h4>
+<h3>Answer:</h3>
+p id="content">This is my page p><br>
+function peekAtContent() {
+   var whatsThere = document.getElementById("content").innerHTML;
+}<br>
+console.log(peekAtContent)
+<h4>2.	Read the value of a checkbox and print it to the console</h4>
+<h3>Answer:</h3>
+to get the checkbox value in JavaScript, you can use the “document. querySelectorAll()” method to select the specified checkboxes or the “document. getElementById” method to get the “id” against each of the selected checkboxes and display its corresponding value.
+<h4>3.	Read the value of a select box and print it to the console.</h4>
+<h3>Answer:</h3>
+o get the select box value in JavaScript, you can use the “document. querySelectorAll()” method to select the specified checkboxes or the “document. getElementById” method to get the “id” against each of the selected checkboxes and display its corresponding value.
+<h4>4.	Place some text in a field. Make up an id for the field.</h4>
+<h3>Answer:</h3>
+p id="make">My name is khan  p><br>
+var get= document.getElementbyid("make").
+<h4>5.	Ask the user about Martial Status. If the variable married is false, place the value "available" in the field with the id "status"</h4>
+<h3>Answer:</h3>
+var status= prompt("Enter your marital status");<br>
+if(status=="married"){<br>
+    console.log("not available");
+}<br>
+else{<br>
+    console.log("available")
+};
+<h4>6.	If a input is empty, fill it with a string.</h4>
+<h3>Answer:</h3>var input = document.getElementById('myInput');<br>
+
+if(input.value.length == 0)<br>
+    input.value = "string";
+<h4>7.	Create a Registeration Form with Validation.</h4>
+<h3>Answer:</h3>Step 1: Basic structure of registration form. ...<br>
+Step 2: Add headings to the form. ...<br>
+Step 3: Input box of Form Validation. ...<br>
+Step 4: Submit button for JavaScript Form Validation. ...<br>
+Step 5: Activate the validation of the registration form.
+<h2>Chapter 51 (Reading and Setting paragraph text)</h2>
+<h4>1.	How can I create a paragraph that expands when the user clicks on a Show More?</h4>
+<h3>Answer:</h3>
+p id="slowLoris">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita et eum laborum at eos recusandae, obcaecati est distinctio molestias dolorum sapiente? Nisi accusamus velit modi, quae officia asperiores illo?<br>
+a href="javascript:void(0);" onClick="expendpara()">show more. /a>>br>
+function expendpara(){}
+ p>
+<!-- <h4>2.	Read the text of a paragraph and use it to search for a specific word or phrase.</h4>
+<h3>Answer:</h3>
+<h4>3.	Read the text of a paragraph and use it to find the longest word.</h4>
+<h3>Answer:</h3>
+<h4>4.	Set the text of a paragraph to the value of a text field, but only if the value is not empty.</h4>
+<h3>Answer:</h3>
+<h4>5.	Set the text of a paragraph to the value of a text field, but only if the value is equal to a specific word or phrase.</h4>
+<h3>Answer:</h3>
+<h4>6.	Set the text of a paragraph to the value of a text field, but only if the value is less than a certain length.</h4>
+<h3>Answer:</h3>
+<h2>Chapter 52 (Manipulating Images and Text)</h2>
+<h3>Answer:</h3>
+<h4>1.	When the user clicks on the sentence, it turns bold.</h4>
+<h3>Answer:</h3>
+<h4>2.	How can I make an image disappear when the user hovers over it and show text instead? When the user hovers off the image, the original image should reappear.</h4>
+<h3>Answer:</h3>
+<h4>3.	When the user mouses over the heading, its background turns black, but it retains its original light gray color</h4>
+<h3>Answer:</h3>
+<h4>4.	When user hover to a paragraph, Add a underline style to text.</h4>
+<h3>Answer:</h3> -->
+
+
+</p>
+<script src="app.js"></script>
+</body>
+</html>
